@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="container">
-    <div style="background-image:url(img/background.jpg);" class="mb-5">
+    <div class="mb-5 navbar-background">
         <nav class="py-2 border-bottom" >
             <div class="container d-flex flex-wrap">
                 <ul class="nav me-auto">
                     <li class="nav-item"><a href="#" class="nav-link link-light px-2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="26" viewBox="0 0 18 26"><path d="M6.66 0l.134.002h1.336c2.639 0 3.745.464 4.994 1.428 1.819 1.424 2.105 3.492 2.105 4.525 0 1.283-.393 2.638-1.356 3.742-.714.856-1.955 2.097-4.388 2.388-1.663.2-2.891.127-3.506.061v-1.306c.273.038.676.074 1.222.074 1.656 0 2.829-.827 3.543-1.719.81-.983.98-1.909 1.015-2.737h-4.555v-1.282h4.515c-.116-.866-.448-1.528-.985-2.179-1.035-1.283-2.499-1.497-3.462-1.497l-6.505-.002-.768-1.498h6.66zm-6.317 26l.804-1.564v-21.844h3.55v21.82h2.508v-8.523h3.276v8.514h2.838v-3.878c0-2.351-.122-5.622-2.77-7.311l1.542-.566c3.194 1.186 4.791 4.283 4.791 8.362v3.428l.804 1.562h-17.344z" fill="#ffffff"></path></svg></a></li>
                     <li class="nav-item ms-2 text-white mt-1">
-                        <p style="font-size: 13px; line-height: 1.5 ;"> <u> Национальный исследовательский университет «Высшая школа экономики» </u> > <u>Образовательные программы бакалавриата</u> > <br> <u>Факультет компьютерных наук</u> > Образовательная программа «Прикладная математика и информатика»</p>
+                        <p class="small-text"> <u> Национальный исследовательский университет «Высшая школа экономики» </u> > <u>Образовательные программы бакалавриата</u> > <br> <u>Факультет компьютерных наук</u> > Образовательная программа «Прикладная математика и информатика»</p>
                     </li>
                 </ul>
                 <ul class="nav">
@@ -111,9 +112,9 @@
     <div class="row ">
 <!--        <div class="col-1"></div>-->
         <div class="col-8 ms-5">
-            <div class="row pt-5 pb-5" style="font-size: 14px">
+            <div class="row pt-5 pb-5 small-text">
                 <div class="col">
-                    <h4>4 года <svg xmlns="http://www.w3.org/2000/svg" class="b-inline-icon" height="25px" viewBox="0 0 18 22" fill-rule="evenodd" clip-rule="evenodd"><g stroke="#000" stroke-width="1.5" fill="none" style="width: 26px;"><path d="M10.854 1.5h-4.479"></path><circle cx="8.466" cy="12.656" r="7.716"></circle><path d="M5.762 11.625l2.704 2.336 7.716-7.757"></path></g></svg></h4>
+                    <h4>4 года <svg xmlns="http://www.w3.org/2000/svg" class="b-inline-icon" height="25px"  viewBox="0 0 18 22" fill-rule="evenodd" clip-rule="evenodd"><g stroke="#000" stroke-width="1.5" fill="none" style="width: 26px;"><path d="M10.854 1.5h-4.479"></path><circle cx="8.466" cy="12.656" r="7.716"></circle><path d="M5.762 11.625l2.704 2.336 7.716-7.757"></path></g></svg></h4>
                     <small>Очная форма обучения</small>
                 </div>
                 <div class="col">
@@ -325,11 +326,11 @@
             <a href="#">Партнеры</a> <br>
             <a href="#">Достижения студентов</a> <br>
             <a href="#">Выпускники</a> <br>
-            <a href="#" class="btn btn-success mt-3" style="width: 100%;">Подать документы</a>
-            <a href="#" class="btn btn-primary mt-1" style="width: 100%;">Личный кабинет абитуриента</a>
-            <a href="#" class="btn btn-primary mt-1" style="width: 100%;">Для иностранных абитуриентов</a>
-            <a href="#" class="btn btn-primary mt-1" style="width: 100%;">Подать заявку иностранному гражданину</a>
-            <a href="#" class="btn btn-outline-dark mt-1 mb-3" style="width: 100%;">Скачать буклет</a>
+            <a href="#" class="btn btn-success mt-3 full-width">Подать документы</a>
+            <a href="#" class="btn btn-primary mt-1 full-width">Личный кабинет абитуриента</a>
+            <a href="#" class="btn btn-primary mt-1 full-width">Для иностранных абитуриентов</a>
+            <a href="#" class="btn btn-primary mt-1 full-width">Подать заявку иностранному гражданину</a>
+            <a href="#" class="btn btn-outline-dark mt-1 mb-3 full-width">Скачать буклет</a>
             <a href="#" class="mb-5"><small>Форум программы</small></a><br>
             <a href="#">Учебные курсы</a> <br>
             <a href="#">Преподаватели</a> <br>
@@ -338,15 +339,15 @@
             <a href="#">Расписание</a> <br>
             <a href="#">Академический совет</a> <br>
 
-            <img class="mt-4" src="https://www.hse.ru/org/persons/cimage/175674529" height="80px" alt="..." style="border-radius: 100%;"><br>
+            <img class="mt-4 image-rounded" src="https://www.hse.ru/org/persons/cimage/175674529" height="80px" alt="..."><br>
             <small><b>Академический руководитель</b></small> <br>
             <a href="#"><small>Соколов Евгений Андреевич</small></a><br>
 
-            <img class="mt-4" src="https://www.hse.ru/org/persons/cimage/126925570" height="80px" alt="..." style="border-radius: 100%;"><br>
+            <img class="mt-4 image-rounded" src="https://www.hse.ru/org/persons/cimage/126925570" height="80px" alt="..."><br>
             <small><b>Научный руководитель</b></small> <br>
             <a href="#"><small>Конушин Антон Сергеевич</small></a> <br>
 
-            <img class="mt-4" src="https://www.hse.ru/org/persons/cimage/103489463" height="80px" alt="..." style="border-radius: 100%;"><br>
+            <img class="mt-4 image-rounded" src="https://www.hse.ru/org/persons/cimage/103489463" height="80px" alt="..."><br>
             <small><b>Менеджер</b></small> <br>
             <a href="#"><small>Пак Татьяна Альбертовна</small></a> <br>
             <br>
