@@ -1,0 +1,380 @@
+<?php
+header('Location: students.php');
+?>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="mb-5 navbar-background">
+        <nav class="py-2 border-bottom" >
+            <div class="container d-flex flex-wrap">
+                <ul class="nav me-auto">
+                    <li class="nav-item"><a href="#" class="nav-link link-light px-2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="26" viewBox="0 0 18 26"><path d="M6.66 0l.134.002h1.336c2.639 0 3.745.464 4.994 1.428 1.819 1.424 2.105 3.492 2.105 4.525 0 1.283-.393 2.638-1.356 3.742-.714.856-1.955 2.097-4.388 2.388-1.663.2-2.891.127-3.506.061v-1.306c.273.038.676.074 1.222.074 1.656 0 2.829-.827 3.543-1.719.81-.983.98-1.909 1.015-2.737h-4.555v-1.282h4.515c-.116-.866-.448-1.528-.985-2.179-1.035-1.283-2.499-1.497-3.462-1.497l-6.505-.002-.768-1.498h6.66zm-6.317 26l.804-1.564v-21.844h3.55v21.82h2.508v-8.523h3.276v8.514h2.838v-3.878c0-2.351-.122-5.622-2.77-7.311l1.542-.566c3.194 1.186 4.791 4.283 4.791 8.362v3.428l.804 1.562h-17.344z" fill="#ffffff"></path></svg></a></li>
+                    <li class="nav-item ms-2 text-white mt-1">
+                        <p class="small-text"> <u> Национальный исследовательский университет «Высшая школа экономики» </u> > <u>Образовательные программы бакалавриата</u> > <br> <u>Факультет компьютерных наук</u> > Образовательная программа «Прикладная математика и информатика»</p>
+                    </li>
+                </ul>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <div class="btn-group btn-group-sm mt-2 me-2" role="group" aria-label="test">
+                            <button type="button" class="btn btn-secondary">RU</button>
+                            <button type="button" class="btn btn-light">EN</button>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link link-light px-2"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12"><path d="M10.5 0c3.438 0 6.937 2.016 10.5 6.047-.844.844-1.383 1.375-1.617 1.594-.234.219-.805.703-1.711 1.453-.906.75-1.641 1.266-2.203 1.547-.563.281-1.305.578-2.227.891-.922.313-1.836.469-2.742.469-1.125 0-2.156-.141-3.094-.422-.938-.281-1.875-.766-2.813-1.453-.938-.688-1.672-1.273-2.203-1.758-.531-.484-1.328-1.273-2.391-2.367 2.031-2.031 3.836-3.539 5.414-4.523 1.578-.984 3.273-1.477 5.086-1.477zm0 10.266c1.156 0 2.148-.422 2.977-1.266.828-.844 1.242-1.844 1.242-3s-.414-2.156-1.242-3c-.828-.844-1.82-1.266-2.977-1.266-1.156 0-2.148.422-2.977 1.266-.828.844-1.242 1.844-1.242 3s.414 2.156 1.242 3c.828.844 1.82 1.266 2.977 1.266zm0-5.766c0 .438.141.797.422 1.078s.641.422 1.078.422c.313 0 .625-.109.938-.328v.328c0 .688-.234 1.273-.703 1.758-.469.484-1.047.727-1.734.727-.688 0-1.266-.242-1.734-.727-.469-.484-.703-1.07-.703-1.758s.234-1.273.703-1.758c.469-.484 1.047-.727 1.734-.727h.375c-.25.313-.375.641-.375.984z" fill="#ffffff"></path></svg></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-light px-2"><svg xmlns="http://www.w3.org/2000/svg" class="control_svg" width="17" height="18" viewBox="0 0 17 18"><path d="M13.702 13.175c.827.315 1.486.817 1.978 1.506.492.689.738 1.467.738 2.333h-16.419c0-1.417.532-2.5 1.595-3.248.394-.276 1.358-.591 2.894-.945.945-.118 1.457-.374 1.536-.768.039-.157.059-.61.059-1.358 0-.118-.039-.217-.118-.295-.157-.157-.315-.433-.472-.827-.079-.315-.157-.787-.236-1.417-.157.039-.285-.02-.384-.177-.098-.157-.177-.364-.236-.62l-.089-.443c-.157-.866-.098-1.28.177-1.24-.118-.157-.217-.532-.295-1.122-.118-.866-.059-1.634.177-2.303.276-.748.768-1.319 1.476-1.713.709-.394 1.476-.571 2.303-.532.787.039 1.506.276 2.156.709.65.433 1.093 1.024 1.329 1.772.197.551.217 1.319.059 2.303-.079.472-.157.768-.236.886.118-.039.207 0 .266.118.059.118.079.266.059.443l-.059.472c-.02.138-.049.246-.089.325l-.118.413c-.039.276-.108.472-.207.591-.098.118-.226.157-.384.118-.079.866-.217 1.476-.413 1.831 0 .039-.069.138-.207.295-.138.157-.207.256-.207.295v.65c0 .394.039.689.118.886.079.197.354.354.827.472.276.118.679.217 1.211.295.532.079.935.177 1.211.295z" fill="#ffffff"></path></svg></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-light px-2"><svg xmlns="http://www.w3.org/2000/svg" class="control_svg" width="19" height="19" viewBox="0 0 19 19"><path d="M12.927 7.9c0-1.384-.492-2.568-1.476-3.552s-2.168-1.476-3.552-1.476-2.568.492-3.552 1.476-1.476 2.168-1.476 3.552.492 2.568 1.476 3.552 2.168 1.476 3.552 1.476 2.568-.492 3.552-1.476 1.476-2.168 1.476-3.552zm4.053 11.1l-4.603-4.592c-1.339.928-2.832 1.391-4.477 1.391-1.07 0-2.093-.208-3.069-.623-.976-.415-1.818-.976-2.525-1.683-.707-.707-1.268-1.549-1.683-2.525-.415-.976-.623-1.999-.623-3.069 0-1.07.208-2.093.623-3.069.415-.976.976-1.818 1.683-2.525.707-.707 1.549-1.268 2.525-1.683.976-.415 1.999-.623 3.069-.623 1.07 0 2.093.208 3.069.623.976.415 1.818.976 2.525 1.683.707.707 1.268 1.549 1.683 2.525.415.976.623 1.999.623 3.069 0 1.646-.464 3.138-1.391 4.477l4.603 4.603-2.031 2.02z" fill="#ffffff"></path></svg></a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div>
+            <div class="row text-white pt-5 pb-5">
+                <div class="col-8 ms-5">
+                    <h6>Бакалаврская программа</h6>
+                    <h2>Прикладная математика и информатика</h2>
+                    <p>Целью программы является подготовка специалистов по работе с данными (data scientist), аналитиков (analyst), исследователей в области компьютерных наук (researcher and computer scientist), инженеров-разработчиков и инженеров-исследователей по программному обеспечению (software engineer and research software engineer).</p>
+                    <p>Программа рассчитана на молодых людей, готовящихся к развитию существующих и созданию новых компьютерных технологий, работая в ведущих ИТ-компаниях и исследовательских центрах.  Учебный план программы разработан с учетом опыта ведущих университетов, таких как Stanford University (США), EPFL (Швейцария), МГУ и МФТИ (Россия), а также Школы анализа данных Яндекса, разработавшей одну из самых сильных образовательных программ в области компьютерных наук в России.</p>
+                    <button type="button" class="btn btn-outline-light">Задать вопрос о программе</button>
+
+
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <div class="row text-white">
+                <div class="col-8 ms-5">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15"><path fill="#000" fill-rule="evenodd" d="M6.122 14.692h-3.75V7.346H0L7.958 0l7.959 7.346h-2.373v7.346h-3.75V9.795H6.123z"></path></svg></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">О программе</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">О программе</a></li>
+                                <li><a class="dropdown-item" href="#">Пилотный поток</a></li>
+                                <li><a class="dropdown-item" href="#">Особенности программы</a></li>
+                                <li><a class="dropdown-item" href="#">Лекторы 1-2 курсов</a></li>
+                                <li><a class="dropdown-item" href="#">О специализациях</a></li>
+                                <li><a class="dropdown-item" href="#">Факультативы ФКН</a></li>
+                                <li><a class="dropdown-item" href="#">Партнеры</a></li>
+                                <li><a class="dropdown-item" href="#">Достижения студентов</a></li>
+                                <li><a class="dropdown-item" href="#">Выпускники</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Абитуриентам</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Паспорт программы</a></li>
+                                <li><a class="dropdown-item" href="#">Траектории поступления</a></li>
+                                <li><a class="dropdown-item" href="#">Карманный словарь абитуриента</a></li>
+                                <li><a class="dropdown-item" href="#">Подготовка</a></li>
+                                <li><a class="dropdown-item" href="#">Стипендии для поступивших</a></li>
+                                <li><a class="dropdown-item" href="#">Будущая профессия</a></li>
+                                <li><a class="dropdown-item" href="#">Онлайн-подготовка</a></li>
+                                <li><a class="dropdown-item" href="#">Тестирование поступивших</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Студентам</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Доска объявлений</a></li>
+                                <li><a class="dropdown-item" href="#">Выбор траектории обучения</a></li>
+                                <li><a class="dropdown-item" href="#">Курсы по выбору 2021-22</a></li>
+                                <li><a class="dropdown-item" href="#">Специализации</a></li>
+                                <li><a class="dropdown-item" href="#">Практическая подготовка</a></li>
+                                <li><a class="dropdown-item" href="#">Проекты</a></li>
+                                <li><a class="dropdown-item" href="#">Project Proposal</a></li>
+                                <li><a class="dropdown-item" href="#">Итоговая аттестация</a></li>
+                                <li><a class="dropdown-item" href="#">Каталог ВКР</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Выпускникам</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Общая информация</a></li>
+                                <li><a class="dropdown-item" href="#">Вышка.Family</a></li>
+                                <li><a class="dropdown-item" href="#">Центр развития карьеры</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row ">
+<!--        <div class="col-1"></div>-->
+        <div class="col-8 ms-5">
+            <div class="row pt-5 pb-5 small-text">
+                <div class="col">
+                    <h4>4 года <svg xmlns="http://www.w3.org/2000/svg" class="b-inline-icon" height="25px"  viewBox="0 0 18 22" fill-rule="evenodd" clip-rule="evenodd"><g stroke="#000" stroke-width="1.5" fill="none" style="width: 26px;"><path d="M10.854 1.5h-4.479"></path><circle cx="8.466" cy="12.656" r="7.716"></circle><path d="M5.762 11.625l2.704 2.336 7.716-7.757"></path></g></svg></h4>
+                    <small>Очная форма обучения</small>
+                </div>
+                <div class="col">
+                    <img src="inc/img/people.png" alt=""><br>
+                        <small>125 бюджетных мест</small><br>
+                        <small>60 платных мест</small><br>
+                        <small>30 платных мест для иностранцев</small>
+                </div>
+                <div class="col">
+                    <img src="inc/img/lang.png" alt=""><br>
+                    <small>Обучение ведётся на русском и английском языках</small>
+                </div>
+                <div class="col">
+                    <img src="inc/img/sertificat.png" alt=""><br>
+                    <small>Государственная аккредитация</small>
+                </div>
+            </div>
+
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Что я буду изучать
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Учебный план можно условно разделить на два двухлетних этапа, в ходе которых решаются разные задачи, вследствие чего они существенно отличаются по своей организации.</p>
+                            <p>На первом этапе каждый студент должен:</p>
+                            <ol>
+                                <li>овладеть основами всех ключевых для компьютерных наук разделов математики;</li>
+                                <li>научиться самостоятельно реализовывать законченный нетривиальный программный проект;</li>
+                                <li>освоить английский язык в достаточной степени, чтобы изучать дисциплины специальности на английском;</li>
+                                <li>выбрать специализацию.</li>
+                            </ol>
+                            <p>Упор на втором этапе делается на предметы по выбору. Каждый студент должен выбрать одну из предлагаемых специализаций, а также курсы по выбору из общего пула. Список предлагаемых специализаций включает:</p>
+                            <ul>
+                                <li>Машинное обучение и приложения</li>
+                                <li>Распределённые системы</li>
+                                <li>Теоретическая информатика</li>
+                                <li>Анализ и принятие решений</li>
+                                <li>Анализ данных и интеллектуальные системы</li>
+                                <li>Математическая инженерия в науке и бизнесе</li>
+                                <li>Промышленная разработка</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-item mt-2">
+                    <h2 class="accordion-header" id="heading2">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                            Преимущества программы
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h6>1. Обучение на уникальном совместном факультете НИУ ВШЭ и "Яндекса"</h6>
+                            <p>В 2014 году Высшая школа экономики и компания Яндекс учредили факультет компьютерных наук, где сочетание академической теории и практического опыта позволяет обучать специалистов, готовых к мгновенному включению в работу по решению широкого спектра IT-задач сразу по окончании университета.</p>
+                            <h6>2. Высокий уровень подготовки</h6>
+                            <p>Программа обучения сформирована с учетом опыта ведущих американских и европейских университетов, таких как Stanford University (США) и EPFL (Швейцария), а также Школы анализа данных Яндекса.</p>
+                            <h6>3. Сильный преподавательский состав</h6>
+                            <p>В числе преподавателей факультета – сотрудники высокотехнологичных компаний (Яндекс, Google и других), представители лучших российских научных групп в области IT (Института проблем передачи информации им. А.А. Харкевича РАН, Института системного анализа РАН, Вычислительного центра им. А.А. Дородницына РАН), победители международных чемпионатов по программированию по системе АСМ и международных математических олимпиад.</p>
+                            <h6>4. Индивидуальная образовательная траектория</h6>
+                            <p>На первых двух курсах студенты могут выбирать между основным и пилотным потоком с углубленной программой. На старших курсах студенты выбирают специализацию и четыре курса по выбору из общего списка. При выборе темы курсовой работы/проекта или ВКР нет привязки к темам выбранной специализации. Студент может выбрать руководителя из числа преподавателей другой специализации, факультета или ВУЗа. Многие пишут работы под руководством опытного практика из индустрии. Студенты, находящиеся на мобильности за рубежом, могут сотрудничать с зарубежными исследователями и защищать работу потом на ФКН. Факультативы ФКН могут удовлетворить запрос на получение дополнительных технических навыков или погружение в дополнительные темы по математике за рамками обязательной программы. Лучшие студенты программы изучают курсы в Школе анализа данных Яндекса.</p>
+                            <h6>5. Активная проектно-исследовательская работа</h6>
+                            <p>Практическая работа занимает заметную часть программы и начинается со второго курса, на котором все студенты должны выполнить программный проект под руководством ментора из ИТ-индустрии. На третьем-четвёртом курсе студент может переключиться на исследовательскую работу или продолжить практико-ориентированные программные проекты уже в команде, по задачам, которые предлагают партнёры факультета.</p>
+                            <h6>6. Финансовая поддержка лучших студентов</h6>
+                            <p>Призеры и победители Всероссийской олимпиады школьников по информатике, математике и физике получают стипендию Яндекса в течение первого года обучения.</p>
+                            <p>На факультете действует стипендиальная программа имени сооснователя компании Яндекс Ильи Сегаловича. Претендовать на стипендию могут наиболее активные и успешные в учебе студенты (уже с первого года обучения) и аспиранты ВШЭ.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-item mt-2">
+                    <h2 class="accordion-header" id="heading3">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                            Во время обучения
+                        </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                        <p>Проектной и научно-исследовательской работе студента посвящается заметная часть образовательной программы. В неё входит программный проект на 2-м курсе, курсовая работа на 3-м курсе, выпускная квалификационная работа (ВКР) на 4-м курсе, научный семинар на 3-4 курсах, а также учебная и производственная летние практики и преддипломная практика.</p>
+                        <p>Подробнее на странице Проектная и научно-исследовательская работа.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-item mt-2">
+                    <h2 class="accordion-header" id="heading4">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                            Перспективы после обучения
+                        </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Выпускники программы могут строить карьеру в разных направлениях. Поле деятельности огромно: искусственный интеллект и системное программирование, разработка программного обеспечения и компьютерных игр, анализ данных, компьютерная  лингвистика, интернет-программирование, разработка рекомендательных систем — и это далеко не полный список.</p>
+                            <p>Компьютерные технологии применимы во всех областях, где есть большие потоки информации. Это не только IT, но и геология, медицина, авиация, банковская сфера, реклама и телекоммуникации. Благодаря анализу данных компании могут достичь более высоких результатов. В частности, компьютерные технологии уже приносят огромную прибыль банкам и игрокам фондового рынка. При этом специалистов в области информационных технологий не хватает, поэтому они очень востребованы.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion mb-5">
+                <div class="accordion-item mt-2">
+                    <h2 class="accordion-header" id="heading5">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                            Что нужно знать для поступления
+                        </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Образовательная программа «Прикладная математика и информатика» предлагает 120 бюджетных мест, 80 платных мест и 30 платных мест для иностранцев.</p>
+                            <p>Поступить на программу можно по результатам:</p>
+                            <ol>
+                                <li><a href="#">Олимпиады для школьников</a></li>
+                                <p>Победители и призеры некоторых олимпиад для школьников имеют право на прием без вступительных испытаний, либо право учесть результат олимпиады как максимальное количество баллов ЕГЭ (100 баллов) по общеобразовательному предмету.</p>
+                                <li>Вступительных испытаний</li>
+                            </ol>
+                            <p>Состав вступительных испытаний и минимальные баллы, подтверждающие успешное прохождение вступительных испытаний:</p>
+                            <ul>
+                                <li>Информатика и информационно-коммуникационные технологии (минимальный балл: 75)</li>
+                                <li>Математика (минимальный балл: 75)</li>
+                                <li>Русский язык (минимальный балл: 60)</li>
+                            </ul>
+                            <p>При поступлении учитываются индивидуальные достижения абитуриентов, а также  могут быть предоставлены особые права.</p>
+                            <p>Подробную информацию о правилах приема можно найти на странице Траектория поступления и страничке для поступающих в бакалавриат НИУ ВШЭ.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <iframe width="100%" height="556" src="https://www.youtube.com/embed/cwkxg3O3l9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Бакалаврская программа 'Прикладная математика и информатика'</p>
+
+            <h4 class="mt-3">Важные объявления</h4>
+            <span class="badge rounded-pill bg-secondary text-light">02.08.2021</span> <a href="#"> Иностранным студентам -- Информирование о прибытии за 14 дней до даты въезда</a><br>
+            <span class="badge rounded-pill bg-secondary text-light">02.08.2021</span> <a href="#"> Сообщите о случаях, связанных с коронавирусом</a><br>
+            <span class="badge rounded-pill bg-secondary text-light">02.08.2021</span> <a href="#"> Где можно сделать прививку от коронавируса?</a><br>
+            <span class="badge rounded-pill bg-secondary text-light">02.08.2021</span> <a href="#"> Как внести информацию о своем Covid-статусе?</a><br>
+            <span class="badge rounded-pill bg-secondary text-light">02.08.2021</span> <a href="#"> Проведение независимого экзамена по английскому языку для студентов 3 курса</a><br>
+
+            <h4 class="mt-5">Новости</h4>
+            <div class="row">
+                <div class="col pe-3">
+                    <img src="https://www.hse.ru/data/2021/09/07/1469376332/3HSE-8037_Preview.jpeg" alt="" width="100%" class="mb-2">
+                    <a href="#" class="text-dark"><h5>«У этого направления хорошая репутация и сильная программа»</h5></a>
+                    <small>Кирилл Кучер и Екатерина Гришина — первокурсники программы «Прикладная математика и информатика» факультета компьютерных наук. Студенты поступили в Вышку с максимальными баллами ЕГЭ: у Кирилла 300 баллов по трем предметам, Екатерина получила по 100 баллов за каждую дисциплину, которую она сдавала. О секретах подготовки к экзаменам, ожиданиях от учебы и выборе ОП ребята рассказали новостной службе портала.</small>
+                    <br><button type="button" class="btn btn-danger btn-sm me-1 mt-1">Образование</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm me-1 mt-1">достижения</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm me-1 mt-1">идеи и опыт</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm me-1 mt-1">баклавариат</button>
+                    <br><small class="text-black-50">7 сентября</small>
+                </div>
+                <div class="col pe-3">
+                    <img src="https://www.hse.ru/data/2021/09/01/1416759977/3iStock-1171173195.jpg" alt="" width="100%" class="mb-2">
+                    <a href="#" class="text-dark"><h5>В Вышке стартует Конкурс научно-исследовательских работ студентов — 2021</h5></a>
+                    <small>Конкурс студенческих работ ежегодно позволяет молодым ученым попробовать себя в настоящем академическом состязании, где ведущие эксперты и специалисты Высшей школы экономики оценивают их исследовательские работы. В этом году принять участие в конкурсе можно с 1 сентября по 15 октября.</small>
+                    <br><button type="button" class="btn btn-secondary btn-sm me-1 mt-1">Наука</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm me-1 mt-1">студенты</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm me-1 mt-1">исследования и аналитика</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm me-1 mt-1">приглашение к участию</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm me-1 mt-1">НИРС</button>
+                    <br><small class="text-black-50">1 сентября</small>
+                </div>
+            </div>
+
+            <div class="row mt-2">
+                <div class="col pe-3">
+                    <img src="https://www.hse.ru/data/2021/08/09/1424753069/3VK%20(52).png" alt="" width="100%" class="mb-2">
+                    <a href="#" class="text-dark"><h5>IMС'21: 3 золота и серебро</h5></a>
+                    <small>Студенты ФКН успешно выступили на Международной студенческой олимпиаде по математике IMC'21 Олимпиада IMC (International Mathematical Competition for University Students).</small>
+                    <br><button type="button" class="btn btn-outline-primary btn-sm me-1 mt-1">достижения</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm me-1 mt-1">студенты</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm me-1 mt-1">репортаж о событии</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm me-1 mt-1">Факультет компьютерных наук</button>
+                    <br><small class="text-black-50">9 августа</small>
+                </div>
+                <div class="col pe-3">
+                    <img src="https://www.hse.ru/data/2021/08/27/1415468080/3%D0%B4%D0%B5%D0%BC%D0%B8%D0%BD1.jpg" alt="" width="100%" class="mb-2">
+                    <a href="#" class="text-dark"><h5>И на ФКН, и во Франции мы исследуем дифференциальные уравнения, применяя алгебру, но на этом сходства заканчиваются</h5></a>
+                    <small>Этим летом студент ПМИ Александр Демин проходит стажировку в École polytechnique. Мы поговорили с ним о его исследованиях, Франции и учебе в Вышке.</small>
+                    <br><button type="button" class="btn btn-outline-primary btn-sm me-1 mt-1">баклавариат</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm me-1 mt-1">Факультет компьютерных наук</button>
+                    <br><small class="text-black-50">27 августа</small>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-outline-dark mt-3 mb-5">Еще новости ></button>
+
+
+        </div>
+<!--        <div class="col-1"></div>-->
+        <div class="col-3 ms-5">
+            <a href="#">О программе</a> <br>
+            <a href="#">Пилотный поток</a> <br>
+            <a href="#">Особенности программы</a> <br>
+            <a href="#">О специализациях</a> <br>
+            <a href="#">Факультативы ФКН</a> <br>
+            <a href="#">Партнеры</a> <br>
+            <a href="#">Достижения студентов</a> <br>
+            <a href="#">Выпускники</a> <br>
+            <a href="#" class="btn btn-success mt-3 full-width">Подать документы</a>
+            <a href="#" class="btn btn-primary mt-1 full-width">Личный кабинет абитуриента</a>
+            <a href="#" class="btn btn-primary mt-1 full-width">Для иностранных абитуриентов</a>
+            <a href="#" class="btn btn-primary mt-1 full-width">Подать заявку иностранному гражданину</a>
+            <a href="#" class="btn btn-outline-dark mt-1 mb-3 full-width">Скачать буклет</a>
+            <a href="#" class="mb-5"><small>Форум программы</small></a><br>
+            <a href="#">Учебные курсы</a> <br>
+            <a href="#">Преподаватели</a> <br>
+            <a href="#">Число студентов и вакантные места</a> <br>
+            <a href="#">Документы образовательной программы</a> <br>
+            <a href="#">Расписание</a> <br>
+            <a href="#">Академический совет</a> <br>
+
+            <img class="mt-4 image-rounded" src="https://www.hse.ru/org/persons/cimage/175674529" height="80px" alt="..."><br>
+            <small><b>Академический руководитель</b></small> <br>
+            <a href="#"><small>Соколов Евгений Андреевич</small></a><br>
+
+            <img class="mt-4 image-rounded" src="https://www.hse.ru/org/persons/cimage/126925570" height="80px" alt="..."><br>
+            <small><b>Научный руководитель</b></small> <br>
+            <a href="#"><small>Конушин Антон Сергеевич</small></a> <br>
+
+            <img class="mt-4 image-rounded" src="https://www.hse.ru/org/persons/cimage/103489463" height="80px" alt="..."><br>
+            <small><b>Менеджер</b></small> <br>
+            <a href="#"><small>Пак Татьяна Альбертовна</small></a> <br>
+            <br>
+            <a href="#"><small>Учебный офис</small></a> <br>
+            <br>
+            <small><b>Адрес</b></small> <br>
+            <small>109028, г. Москва, Покровский бульвар, д. 11</small> <br>
+            <small>Телефон: +7 (495) 772-95-90, 27343</small><br>
+            <img class="mt-3" src="https://www.hse.ru/mirror/pubs/share/196140438" width=" 150px" alt=""><br>
+            <img class="mt-3" src="https://www.hse.ru/pubs/share/direct/450604176.png" width=" 150px" alt=""><br>
+            <img class="mt-3" src="https://www.hse.ru/pubs/share/direct/454913600.png" width=" 150px" alt=""><br>
+
+
+
+
+
+        </div>
+    </div>
+
+    
+    
+    
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
