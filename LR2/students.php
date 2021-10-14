@@ -1,18 +1,7 @@
 <?php
 require_once 'logic.php';
 ?>
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="container">
-    <?php include 'navbar.php'; ?>
+<?php include 'header.php'; ?>
     <div class="row">
         <form action="students.php" method="get">
             <label>Фильтрация результата поиска</label>
@@ -74,8 +63,4 @@ require_once 'logic.php';
 
 
 
-</div>
-
-<script src="js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<?php include 'footer.php'; ?>

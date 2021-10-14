@@ -1,18 +1,7 @@
 <?php
 header('Location: students.php');
 ?>
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="container">
-    <?php include 'navbar.php'; ?>
+<?php include 'header.php'; ?>
 
     <div class="row ">
 <!--        <div class="col-1"></div>-->
@@ -272,11 +261,6 @@ header('Location: students.php');
         </div>
     </div>
 
+<?php include 'footer.php'; ?>
     
     
-    
-</div>
-
-<script src="js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
