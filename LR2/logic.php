@@ -1,6 +1,6 @@
 <?php
 require_once 'db.php';
-
+global $pdo;
 
 $sqlALL = "SELECT students.id, students.img_path, students.full_name, students.characteristic, students.year, groups.name as 'group', students.id_group
     FROM `students`
