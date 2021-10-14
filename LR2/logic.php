@@ -1,6 +1,6 @@
 <?php
+require_once 'db.php';
 
-$pdo = new PDO('mysql:host=localhost;dbname=university', 'root', '');
 
 $sqlALL = "SELECT students.id, students.img_path, students.full_name, students.characteristic, students.year, groups.name as 'group', students.id_group
     FROM `students`
@@ -9,7 +9,6 @@ $sqlALL = "SELECT students.id, students.img_path, students.full_name, students.c
 $arBindsAll = [];
 $stmtAll = $pdo->prepare($sqlALL);
 $resultAll = $stmtAll->execute($arBindsAll);
-$resultAll = $pdo->query($sqlALL)->fetchAll(PDO::FETCH_ASSOC);
 
 $sqlGroups = "SELECT groups.id, groups.name from `groups`";
 $arBindsGroups = [];
@@ -22,9 +21,9 @@ if (!key_exists('clearFilter', $_GET)) {
     if (count($_GET) > 0) {
         $first = true;
         $sqlALL .= " WHERE";
-        if (isset($_GET['group']) && ($company = $_GET['group'])) {
+        if (isset($_GET['group']) && ($group = $_GET['group'])) {
             if (!$first) $sqlALL .= " AND";
-            $sqlALL .= " students.id_group = $company";
+            $sqlALL .= " students.id_group = $group";
             $arBindsAll['group'] = htmlspecialchars($_GET['group']);
             $first = false;
         }
@@ -47,9 +46,6 @@ if (!key_exists('clearFilter', $_GET)) {
             $arBindsAll['full_name'] = htmlspecialchars($_GET['full_name']);
             $first = false;
         }
-        $stmtAll = $pdo->prepare($sqlALL);
-        $resultAll = $pdo->query($sqlALL)->fetchAll(PDO::FETCH_ASSOC);
     }
-
-
 }
+$resultAll = $pdo->query($sqlALL)->fetchAll(PDO::FETCH_ASSOC);

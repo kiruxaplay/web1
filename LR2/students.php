@@ -12,10 +12,10 @@ require_once 'logic.php';
             <div class="mb-3">
                 <label>Фильтрация по учебной группе:</label>
                 <select name="group" class="form-control">
-                    <option value="" selected="">Выберите учебную группу</option>
+                    <option value="">Выберите учебную группу</option>
                     <?php if (count($resultGroups) > 0): ?>
                         <?php foreach ($resultGroups as $item): ?>
-                            <option value="<?= $item['id'] ?>"> <?= $item['name'] ?> </option>
+                            <option value="<?= $item['id'] ?>" <?php echo (isset($arBindsAll['group']) && $arBindsAll['group'] === $item['id'])? "selected" : ''; ?>> <?= htmlspecialchars($item['name']) ?> </option>
                         <?php endforeach; ?>
                     <?php endif; ?>
                 </select>
@@ -26,7 +26,7 @@ require_once 'logic.php';
             </div>
             <div class="mb-3">
                 <label>Фильтрация по ФИО:</label>
-                <input type="text" name="full_name" placeholder="Введите ФИО" value="<?php echo isset($arBindsAll['full_name']) ? $arBindsAll['full_name'] : ''; ?>" class="form-control">
+                <input type="text" name="full_name" placeholder="Введите ФИО" value="<?php echo isset($arBindsAll['full_name']) ? htmlspecialchars($arBindsAll['full_name']) : ''; ?>" class="form-control">
             </div>
             <input type="submit" value="Применить фильтр" class="btn btn-primary">
             <input type="submit" name="clearFilter" value="Очистить фильтр" class="btn btn-danger">
@@ -48,10 +48,10 @@ require_once 'logic.php';
                 <?php foreach ($resultAll as $item): ?>
                     <tr>
                         <th scope="row"><img src="inc/students/<?= $item['img_path'] ?>" style="max-width: 150px;"></th>
-                        <td><?= $item['full_name'] ?></td>
-                        <td><?= $item['group'] ?></td>
-                        <td><?= $item['characteristic'] ?></td>
-                        <td><?= $item['year'] ?></td>
+                        <td><?= htmlspecialchars($item['full_name']) ?></td>
+                        <td><?= htmlspecialchars($item['group']) ?></td>
+                        <td><?= htmlspecialchars($item['characteristic']) ?></td>
+                        <td><?= htmlspecialchars($item['year']) ?></td>
                     </tr>
                 <?php endforeach; ?>
                 </tbody>
